@@ -1,0 +1,6 @@
+const {ITEM_MAP} = require('./all-items') // Need JS transpilation of 'all-item.ts'
+
+const validItems = Object.keys(ITEM_MAP)
+
+console.log(`export type ItemId =`)
+console.log(' ', validItems.map(item => `'${item}'`).join(' |\n  '))
