@@ -13,10 +13,22 @@ when this tool is run, be executed using Node. You use `console.log` to
 generate the output, which is then saved as the same filename but as the `.ts`
 extension instead.
 
-## Build
+## Library Usage
 
-```
-yarn build
+```typescript
+import { assert } from '@fleker/gents'
+
+interface Item {
+  label: string
+}
+
+export const ITEM_MAP = {
+  potion: assert<Item>({
+    label: 'Potion'
+  })
+}
+
+export type ItemId = keyof typeof ITEM_MAP
 ```
 
 ## Example
@@ -114,4 +126,10 @@ The benefit is that, after running this process, you can then simply just:
 
 ```typescript
 import {ItemId} from './type-item'
+```
+
+## Build
+
+```
+yarn build
 ```
