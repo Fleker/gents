@@ -1,13 +1,12 @@
 {
   "name": "@fleker/gents",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple types pre-processor for TypeScript",
   "main": "index.js",
   "author": "Nick Felker",
   "license": "MIT",
-  "private": false,
   "scripts": {
-    "build": "tsc index.ts"
+    "build": "tsc *.ts"
   },
   "bin": {
     "gents": "./index.js"
