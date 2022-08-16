@@ -2,7 +2,6 @@
 /**
  * @fileoverview A meta-TS generation tool which can replace a haphazard and
  * hardcoded code-generation process. 🎩
- * @version 1.0.0
  */
 
 // This is meant to be executed on the command line.
