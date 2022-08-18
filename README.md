@@ -13,6 +13,10 @@ when this tool is run, be executed using Node. You use `console.log` to
 generate the output, which is then saved as the same filename but as the `.ts`
 extension instead.
 
+```
+npm install @fleker/gents
+```
+
 ## Library Usage
 
 ```typescript
